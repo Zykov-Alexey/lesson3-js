@@ -112,7 +112,7 @@ let car1 = {
 console.log('-------End Задача4---------');
 
 //задача 7
-var arr = [5, 10, 25, 3, 7, 55, 111, 2, 555, 9, 78, 366];
+var arr = [12, 23, 100, 34, 56, 9, 233];
 
 
 function myMax(arr) {
@@ -121,4 +121,6 @@ function myMax(arr) {
   }
   return max;
 }
-var max = myMax([5, 10, 25, 3, 7, 55, 111, 2, 555, 9, 78, 366]);
+var max = myMax([12, 23, 100, 34, 56, 9, 233]);
+console.log(myMax(arr));
+console.log('-------End Задача4---------');
