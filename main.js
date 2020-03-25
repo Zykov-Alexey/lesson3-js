@@ -109,7 +109,7 @@ let car1 = {
     if (value === 'new' && this.year < yearNow) this.year = yearNow;
   }
 };
-console.log('-------End Задача4---------');
+console.log('-------End Задача4-5-6---------');
 
 //задача 7
 var arr = [12, 23, 100, 34, 56, 9, 233];
@@ -123,4 +123,26 @@ function myMax(arr) {
 }
 var max = myMax([12, 23, 100, 34, 56, 9, 233]);
 console.log(myMax(arr));
-console.log('-------End Задача4---------');
+console.log('-------End Задача7---------');
+
+//задача 8
+function myMul(a,b){
+ return a * b 
+};
+console.log(myMul(2,3));
+console.log(myMul(5,3));
+console.log('---Умножение---');
+let myDouble = myMul.bind(null, 2);
+console.log(myDouble(3));
+console.log(myDouble(4));
+console.log(myDouble(5));
+console.log('---удваивает принимающий параметр---');
+let myTriple = myMul.bind(null, 3);
+console.log(myTriple(3));
+console.log(myTriple(4)); 
+console.log(myTriple(5));
+console.log('---утраивает принимающий параметр---');
+
+console.log('-------End Задача8---------');
+
+//задача 9
