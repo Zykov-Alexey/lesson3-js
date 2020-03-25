@@ -76,7 +76,7 @@ console.log(myPow(3, 4, myPrint));
 console.log(myPow(2, 3, myPrint)); 
 console.log('-------End Задача3---------');
 
-//задача 4
+//задача 4-5-6
 
 function fullInfo() {
   return `${this.name} ${this.model}, ${this.engine}cc, year ${this.year}, ${this.used}`;
@@ -110,3 +110,15 @@ let car1 = {
   }
 };
 console.log('-------End Задача4---------');
+
+//задача 7
+var arr = [5, 10, 25, 3, 7, 55, 111, 2, 555, 9, 78, 366];
+
+
+function myMax(arr) {
+  for (var i=0, len = arr.length; i<len; i+=1 ){
+    var max = Math.max.apply(null, arr);
+  }
+  return max;
+}
+var max = myMax([5, 10, 25, 3, 7, 55, 111, 2, 555, 9, 78, 366]);
