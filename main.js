@@ -77,12 +77,27 @@ console.log(myPow(2, 3, myPrint));
 console.log('-------End Задача3---------');
 
 //задача 4
-var car = {}
-car.name = 'audi';
-car.model = 'a6';
-car.engine = 2.5
-car.year = 2015
-car.used = 'used'
+var car = {
+  name : 'audi',
+  model : 'a6',
+  engine : 2.5,
+  year : 2015,
+  used : 'used or new'
+}
+var car1 = {
+  name : 'bmw',
+  model : 'm5',
+  engine : 3.0,
+  year : 2019,
+  used : 'used or new'
+}
+var car2 = {
+  name : 'VW',
+  model : 'passat',
+  engine : 1.8,
+  year : 2020,
+  used : 'used or new'
+}
 
 
 
