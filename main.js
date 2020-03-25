@@ -77,29 +77,36 @@ console.log(myPow(2, 3, myPrint));
 console.log('-------End Задача3---------');
 
 //задача 4
-var car = {
-  name : 'audi',
-  model : 'a6',
-  engine : 2.5,
-  year : 2015,
-  used : 'used or new'
-}
-var car1 = {
-  name : 'bmw',
-  model : 'm5',
-  engine : 3.0,
-  year : 2019,
-  used : 'used or new'
-}
-var car2 = {
-  name : 'VW',
-  model : 'passat',
-  engine : 1.8,
-  year : 2020,
-  used : 'used or new'
+
+function fullInfo() {
+  return `${this.name} ${this.model}, ${this.engine}cc, year ${this.year}, ${this.used}`;
 }
 
-
-
-
+let yearNow = new Date().getFullYear();
+let car = {
+  name: 'audi',
+  model: 'a6',
+  engine: 2.5,
+  year: 2010,
+  info: fullInfo,
+  get used() {
+    return this.year !== yearNow ? 'used' : 'new';
+  },
+  set used(value) {
+    if (value === 'new' && this.year < yearNow) this.year = yearNow;
+  }
+};
+let car1 = {
+  name: 'bmw',
+  model: 'x5',
+  engine: 3.0,
+  year: 2019,
+  info: fullInfo,
+  get used() {
+    return yearNow - this.year ? 'used' : 'new';
+  },
+  set used(value) {
+    if (value === 'new' && this.year < yearNow) this.year = yearNow;
+  }
+};
 console.log('-------End Задача4---------');
