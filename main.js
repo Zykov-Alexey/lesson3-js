@@ -146,3 +146,24 @@ console.log('---утраивает принимающий параметр---');
 console.log('-------End Задача8---------');
 
 //задача 9
+
+let notUniqStrings = ['Bob','Kate','Jhon','Tom','Jhon','Kate','Tom','Bob','Jhon','Tom'];
+let notUniqNums = [1, 1, 2, 3, 4, 5, 6, 7];
+
+function myUniq(arr) {
+  let set = new Set();
+
+  arr.forEach(item => {
+    set.add(item);
+  });
+
+  return set;
+}
+
+console.log(myUniq(notUniqNums));
+
+console.log(myUniq(notUniqStrings));
+
+console.log(myUniq(notUniqNums));
+
+console.log(myUniq(notUniqStrings));
