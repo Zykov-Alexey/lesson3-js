@@ -164,6 +164,4 @@ console.log(myUniq(notUniqNums));
 
 console.log(myUniq(notUniqStrings));
 
-console.log(myUniq(notUniqNums));
-
-console.log(myUniq(notUniqStrings));
+console.log('-------End Задача9---------');
